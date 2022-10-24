@@ -1,0 +1,201 @@
+@charset "utf-8";
+.bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://fly.linkcdn.to/2021102707/1635322257687.png");
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(1)
+}
+
+body {
+    --link-font: LoraItalic;
+    --link-title-color: #44423E;
+    --link-desc-color: #44423E;
+    --link-block-corner: 30px;
+    --link-block-border: 2px;
+    --link-block-bg-color: rgba(225, 148, 80, 1.000);
+    --link-block-font-color: #ffffff;
+    --link-block-border-color: #E19450;
+    --link-block-shadow-color: #BFBFBF;
+    --link-thumbnail-radius: 50%;
+    --link-thumbnail-color: #ffffff;
+    --link-button-bg-color: #ffffff;
+    --link-button-font-color: #E19450;
+    --link-social-color-shadow: rgba(68, 66, 62, 1.000);
+    --link-social-color-blend: rgba(0, 0, 0, 0)
+}
+
+body,
+body .center {
+    font-family: LoraItalic
+}
+
+.item-style::before,
+.item-style::after,
+.item-style .ctm-style::before,
+.item-style .ctm-style::after {
+    display: none;
+    background: 0 0;
+    transform: none;
+    border: 0
+}
+
+.item-style .ctm-style {
+    border: 0 !important;
+    background-color: transparent
+}
+
+.item {
+    border-radius: var(--link-block-corner);
+    background-color: var(--link-block-bg-color) !important;
+    border: var(--link-block-border) solid var(--link-block-border-color) !important;
+    box-shadow: none
+}
+
+.item-style:hover {
+    background-color: transparent !important;
+    box-shadow: none;
+    transform: none
+}
+
+.item-style:hover .btn,
+.item-style:hover .btn-status {
+    color: var(--link-block-border-color) !important
+}
+
+.item-style:hover .iconfont {
+    color: var(--link-block-border-color) !important;
+    border-color: var(--link-block-border-color) !important
+}
+
+.item-form::before,
+.item-form::after,
+.item-form .ctm-style::before,
+.item-form .ctm-style::after {
+    display: none;
+    background: 0 0;
+    transform: none;
+    border: 0
+}
+
+.item-form .ctm-style {
+    border: 0 !important;
+    background-color: transparent
+}
+
+.item-form {
+    border-radius: var(--link-block-corner);
+    background-color: var(--link-block-bg-color) !important;
+    border: var(--link-block-border) solid var(--link-block-border-color) !important;
+    box-shadow: none
+}
+
+.item-form .form-control input,
+.item-form .form-control select,
+.item-form .form-control textarea {
+    border-radius: var(--link-block-corner)
+}
+
+.item-form .form-field-phone .dial-code {
+    border-radius: var(--link-block-corner) 0 0 var(--link-block-corner)
+}
+
+.item-form .form-field-phone input.data-field {
+    border-radius: 0 var(--link-block-corner) var(--link-block-corner) 0
+}
+
+.item-video .video-box iframe,
+.item-video .video-box img {
+    border-radius: var(--link-block-corner)
+}
+
+.biolink,
+.link-form,
+.edit-form {
+    padding: 0
+}
+
+.item .btn {
+    color: var(--link-block-font-color) !important
+}
+
+.item .btn-img {
+    display: none
+}
+
+.item .btn-icon {
+    display: inline-block
+}
+
+.layout-basic {
+    display: block;
+    text-align: center
+}
+
+.layout-basic .avatar {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.center .avatar {
+    width: 100px;
+    height: 100px;
+    min-width: 100px
+}
+
+.center .avatar img {
+    border-width: 2px
+}
+
+.layout-basic {
+    --link-profile-corner: 50%
+}
+
+.social_list-spirit {
+    display: none
+}
+
+.social_list-svg-3 {
+    display: none
+}
+
+.social_list-svg-4 {
+    display: flex
+}
+
+.social_list-svg-6 {
+    display: none
+}
+
+.social_list a sp {
+    color: var(--link-social-color-shadow)
+}
+
+.social_list [class^=social_list-svg],
+.social_list .social_list-spirit {
+    justify-content: center
+}
+
+.item-form .form-control input,
+.item-form .form-control select,
+.item-form .form-control textarea,
+.item-form .form-field-phone .dial-code {
+    border: 2px solid transparent;
+    background: 0 0;
+    border-bottom: 2px solid var(--form-style-color);
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0 !important
+}
+
+.item-form .form-field-phone input.data-field {
+    border-radius: 0 !important
+}
+
+@media only screen and (max-width:767px) {
+    .bg {
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://fly.linkcdn.to/2021102707/1635322242050.png");
+        background-size: cover
+    }
+}

@@ -1,0 +1,2806 @@
+@charset "utf-8";
+:root {
+    --linkfly-theme: #38E199;
+    --linkfly-theme-page: #38E199;
+    --linkfly-alter: #FF6541
+}
+
+@font-face {
+    font-family: mavenpro;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/mavenpro/v25/7Auup_AqnyWWAxW2Wk3swUz56MS91Eww8Rf21nijpBh8CvRBOB1s.woff) format('woff');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+}
+
+@font-face {
+    font-family: mavenpro;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/mavenpro/v25/7Auup_AqnyWWAxW2Wk3swUz56MS91Eww8Rf21nmjpBh8CvRBOB1s.woff) format('woff');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: mavenpro;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/mavenpro/v25/7Auup_AqnyWWAxW2Wk3swUz56MS91Eww8Rf21nejpBh8CvRBOA.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+    font-family: montserrat-regular;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+}
+
+@font-face {
+    font-family: montserrat-regular;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm459W1hyyTh89ZNpQ.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+    font-family: montserrat-regular;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm459WZhyyTh89ZNpQ.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+}
+
+@font-face {
+    font-family: montserrat-regular;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm459WdhyyTh89ZNpQ.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: montserrat-regular;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+    font-family: poppins-medium;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z11lFd2JQEl8qw.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB
+}
+
+@font-face {
+    font-family: poppins-medium;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1JlFd2JQEl8qw.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: poppins-medium;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+    font-family: loraitalic;
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lora/v17/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFoqJ2mvWc3ZyhTjcV.woff) format('woff');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+}
+
+@font-face {
+    font-family: loraitalic;
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lora/v17/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFoqt2mvWc3ZyhTjcV.woff) format('woff');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+    font-family: loraitalic;
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lora/v17/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFoqB2mvWc3ZyhTjcV.woff) format('woff');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+}
+
+@font-face {
+    font-family: loraitalic;
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lora/v17/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFoqF2mvWc3ZyhTjcV.woff) format('woff');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: loraitalic;
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lora/v17/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFoq92mvWc3ZyhTg.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+    font-family: archivo-regular;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/archivo/v9/k3k6o8UDI-1M0wlSV9XAw6lQkqWY8Q82sJaRE-NWIDdgffTTNDNZ-BdvBU7iVNRQGG4.woff) format('woff');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+}
+
+@font-face {
+    font-family: archivo-regular;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/archivo/v9/k3k6o8UDI-1M0wlSV9XAw6lQkqWY8Q82sJaRE-NWIDdgffTTNDNZ-RdvBU7iVNRQGG4.woff) format('woff');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: archivo-regular;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/archivo/v9/k3k6o8UDI-1M0wlSV9XAw6lQkqWY8Q82sJaRE-NWIDdgffTTNDNZ9xdvBU7iVNRQ.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+    font-family: pacifico-1;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/pacifico/v17/FwZY7-Qmy14u9lezJ-6K6MmBp0u-zK4.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+}
+
+@font-face {
+    font-family: pacifico-1;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/pacifico/v17/FwZY7-Qmy14u9lezJ-6D6MmBp0u-zK4.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+    font-family: pacifico-1;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/pacifico/v17/FwZY7-Qmy14u9lezJ-6I6MmBp0u-zK4.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+}
+
+@font-face {
+    font-family: pacifico-1;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/pacifico/v17/FwZY7-Qmy14u9lezJ-6J6MmBp0u-zK4.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: pacifico-1;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/pacifico/v17/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+    font-family: aleo-light-5;
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/aleo/v4/c4mg1nF8G8_syKbrxDxJn61_9KKHWA.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: aleo-light-5;
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/aleo/v4/c4mg1nF8G8_syKbrxDJJn61_9KI.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+    font-family: aleo-regular-7;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/aleo/v4/c4mv1nF8G8_swAPJ0R9rkodF_Q.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: aleo-regular-7;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/aleo/v4/c4mv1nF8G8_swA3J0R9rkoc.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+    font-family: akrobat-regular;
+    font-display: swap;
+    src: url(https://fly.linkcdn.to/statics/fonts/Akrobat-Regular.otf)
+}
+
+@font-face {
+    font-family: open sans;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4taVQUwaEQbjB_mQ.woff) format('woff');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+}
+
+@font-face {
+    font-family: open sans;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4kaVQUwaEQbjB_mQ.woff) format('woff');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+    font-family: open sans;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4saVQUwaEQbjB_mQ.woff) format('woff');
+    unicode-range: U+1F00-1FFF
+}
+
+@font-face {
+    font-family: opensans;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4jaVQUwaEQbjB_mQ.woff) format('woff');
+    unicode-range: U+0370-03FF
+}
+
+@font-face {
+    font-family: opensans;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4iaVQUwaEQbjB_mQ.woff) format('woff');
+    unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F
+}
+
+@font-face {
+    font-family: opensans;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4vaVQUwaEQbjB_mQ.woff) format('woff');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+}
+
+@font-face {
+    font-family: opensans;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQUwaEQbjB_mQ.woff) format('woff');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: opensans;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVQUwaEQbjA.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+    font-family: futurabkbtbook;
+    font-display: swap;
+    src: url(https://fly.linkcdn.to/statics/fonts/FuturaBkBTBook.eot);
+    src: url(https://fly.linkcdn.to/statics/fonts/FuturaBkBTBook.eot?#iefix) format('embedded-opentype'), url(https://fly.linkcdn.to/statics/fonts/FuturaBkBTBook.ttf) format('truetype'), url(https://fly.linkcdn.to/statics/fonts/FuturaBkBTBook.svg) format('svg'), url(https://fly.linkcdn.to/statics/fonts/FuturaBkBTBook.woff) format('woff')
+}
+
+@font-face {
+    font-family: playfairdisplay;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDTbtXK-F2qC0usEw.woff) format('woff');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+    font-family: playfairdisplay;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDYbtXK-F2qC0usEw.woff) format('woff');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+}
+
+@font-face {
+    font-family: playfairdisplay;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDZbtXK-F2qC0usEw.woff) format('woff');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: playfairdisplay;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtXK-F2qC0s.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+    font-family: prozalibre-regular;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/prozalibre/v5/LYjGdGHgj0k1DIQRyUEyyEomdNr1Wpyyzzc.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: prozalibre-regular;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/prozalibre/v5/LYjGdGHgj0k1DIQRyUEyyEoodNr1Wpyy.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+    font-family: sfuidisplay;
+    font-display: swap;
+    src: url(https://fly.linkcdn.to/statics/fonts/SF-UI-DISPLAY-REGULAR.eot);
+    src: url(https://fly.linkcdn.to/statics/fonts/SF-UI-DISPLAY-REGULAR.eot?#iefix) format('embedded-opentype'), url(https://fly.linkcdn.to/statics/fonts/SF-UI-DISPLAY-REGULAR.ttf) format('truetype'), url(https://fly.linkcdn.to/statics/fonts/SF-UI-DISPLAY-REGULAR.svg) format('svg'), url(https://fly.linkcdn.to/statics/fonts/SF-UI-DISPLAY-REGULAR.woff) format('woff')
+}
+
+@font-face {
+    font-family: kiteone;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/kiteone/v10/70lQu7shLnA_E02vyp1c4njkOJuB.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+body {
+    font-family: helvetica neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff
+}
+
+body,
+ul,
+p,
+div,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],
+template {
+    display: none
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #3155ff
+}
+
+a:active,
+a:hover {
+    outline: 0
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b,
+strong {
+    font-weight: 700
+}
+
+dfn {
+    font-style: italic
+}
+
+h1 {
+    margin: .67em 0;
+    font-size: 2em
+}
+
+mark {
+    color: #000;
+    background: #ff0
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    height: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+pre {
+    overflow: auto
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit
+}
+
+button {
+    overflow: visible;
+    outline: none;
+    border: none
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    outline: none
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+    color: rgba(16, 16, 16, .3)
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+input {
+    line-height: normal
+}
+
+input[type=checkbox],
+input[type=radio] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type=search] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+fieldset {
+    padding: .35em .625em .75em;
+    margin: 0 2px;
+    border: 1px solid silver
+}
+
+legend {
+    padding: 0;
+    border: 0
+}
+
+textarea {
+    overflow: auto
+}
+
+textarea:focus {
+    outline: none
+}
+
+optgroup {
+    font-weight: 700
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse
+}
+
+td,
+th {
+    padding: 0
+}
+
+@media print {
+    *,
+    :after,
+    :before {
+        color: #000 !important;
+        text-shadow: none !important;
+        background: 0 0 !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important
+    }
+    a,
+    a:visited {
+        text-decoration: underline
+    }
+    a[href]:after {
+        content: " (" attr(href) ")"
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")"
+    }
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: ""
+    }
+    blockquote,
+    pre {
+        border: 1px solid #999;
+        page-break-inside: avoid
+    }
+    thead {
+        display: table-header-group
+    }
+    img,
+    tr {
+        page-break-inside: avoid
+    }
+    h2,
+    h3,
+    p {
+        orphans: 3;
+        widows: 3
+    }
+    h2,
+    h3 {
+        page-break-after: avoid
+    }
+    label {
+        border: 1px solid #000
+    }
+    table {
+        border-collapse: collapse !important
+    }
+    table td,
+    table th {
+        background-color: #fff !important
+    }
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none
+}
+
+a:focus {
+    outline: none
+}
+
+figure {
+    margin: 0
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%
+}
+
+img[src=''] {
+    opacity: 0
+}
+
+.block {
+    display: block !important
+}
+
+.inlineBlock {
+    display: inline-block !important
+}
+
+.hidden {
+    display: none !important
+}
+
+.popup-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .65);
+    z-index: 101;
+    display: none
+}
+
+.popup-container {
+    position: absolute;
+    background: #fff;
+    font-size: 15px;
+    font-family: MavenPro;
+    width: 90%;
+    max-width: 690px;
+    border-radius: 8px;
+    color: #333;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 200px;
+    padding: 20px 20px 80px
+}
+
+.popup-header {
+    display: flex;
+    align-items: center
+}
+
+.popup-header button {
+    color: #333
+}
+
+.popup-header-svg {
+    width: 48px;
+    height: 48px
+}
+
+.popup-header-svg svg {
+    width: 100%;
+    height: 100%
+}
+
+.popup-header-title {
+    font-size: 17px;
+    text-indent: 12px
+}
+
+.popup-ctx {
+    line-height: 24px;
+    padding-left: 60px
+}
+
+.popup-alert {
+    color: var(--linkfly-alter);
+    padding-top: 16px;
+    padding-left: 60px;
+    font-size: 13px;
+    line-height: 21px
+}
+
+.popup-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    display: flex;
+    text-align: center;
+    line-height: 60px;
+    border-top: 1px solid#DDDDDD;
+    height: 60px;
+    box-sizing: content-box
+}
+
+.popup-footer button {
+    width: 50%;
+    height: 60px;
+    background: initial
+}
+
+.popup-footer button:first-child {
+    border-right: 1px solid #ddd
+}
+
+.popup-footer button:last-child {
+    border-left: 1px solid #ddd
+}
+
+/*!* Icon Font lfshare
+* Made with love by Icons8 [ https://icons8.com/ ] using webfont [ https://github.com/itgalaxy/webfont ]
+*
+* Contacts:
+* [ https://icons8.com/contact ]
+*
+* Follow Icon8 on
+* Twitter [ https://twitter.com/icons_8 ]
+* Facebook [ https://www.facebook.com/Icons8 ]
+* Google+ [ https://plus.google.com/+Icons8 ]
+* GitHub [ https://github.com/icons8 ]*/
+
+@font-face {
+    font-family: lfshare;
+    src: url(https://fly.linkcdn.to/statics/icons/fonts/lfshare.eot?t=1651902680359);
+    src: url(https://fly.linkcdn.to/statics/icons/fonts/lfshare.eot?t=1651902680359#iefix) format("embedded-opentype"), url(https://fly.linkcdn.to/statics/icons/fonts/lfshare.woff2?t=1651902680359) format("woff2"), url(https://fly.linkcdn.to/statics/icons/fonts/lfshare.woff?t=1651902680359) format("woff"), url(https://fly.linkcdn.to/statics/icons/fonts/lfshare.ttf?t=1651902680359) format("truetype"), url(https://fly.linkcdn.to/statics/icons/fonts/lfshare.svg?t=1651902680359#font) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: lfshare;
+        src: url(https://fly.linkcdn.to/statics/icons/fonts/lfshare.svg?t=1651902680359#lfshare) format("svg")
+    }
+}
+
+.iconfont {
+    font-family: lfshare !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+[data-icons8]:before {
+    content: attr(data-icons8)
+}
+
+.icon-7digital:before,
+.icon-8tracks:before,
+.icon-amazon:before,
+.icon-anghami:before,
+.icon-applemusic:before,
+.icon-awa:before,
+.icon-bandcamp:before,
+.icon-beatport:before,
+.icon-bleep:before,
+.icon-boomkat:before,
+.icon-bugs:before,
+.icon-emusic:before,
+.icon-flo:before,
+.icon-gaana:before,
+.icon-genie:before,
+.icon-groove:before,
+.icon-hardwax:before,
+.icon-jiosaavn:before,
+.icon-joox:before,
+.icon-juno:before,
+.icon-kkbox:before,
+.icon-melon:before,
+.icon-mixcloud:before,
+.icon-odnoklassniki:before,
+.icon-offerup:before,
+.icon-other0:before,
+.icon-other1:before,
+.icon-other3:before,
+.icon-other4:before,
+.icon-other6:before,
+.icon-other7:before,
+.icon-other8:before,
+.icon-other9:before,
+.icon-other10:before,
+.icon-other11:before,
+.icon-other12:before,
+.icon-other13:before,
+.icon-other14:before,
+.icon-other15:before,
+.icon-other16:before,
+.icon-other17:before,
+.icon-other18:before,
+.icon-other19:before,
+.icon-other20:before,
+.icon-other21:before,
+.icon-other22:before,
+.icon-other23:before,
+.icon-other24:before,
+.icon-pandora:before,
+.icon-patreon:before,
+.icon-pinterest:before,
+.icon-plans:before,
+.icon-portfolio:before,
+.icon-poshmark:before,
+.icon-price:before,
+.icon-qobuz:before,
+.icon-qqmusic:before,
+.icon-service:before,
+.icon-shopee:before,
+.icon-shopify:before,
+.icon-simfyafrica:before,
+.icon-skype:before,
+.icon-smile:before,
+.icon-snapdeal:before,
+.icon-soundcloud:before,
+.icon-spotify:before,
+.icon-store:before,
+.icon-story:before,
+.icon-studio:before,
+.icon-suamusica:before,
+.icon-suamusicaoficial:before,
+.icon-subs:before,
+.icon-telephone:before,
+.icon-tidal:before,
+.icon-tokopedia:before,
+.icon-traing:before,
+.icon-traxsource:before,
+.icon-tumblr:before,
+.icon-twitch:before,
+.icon-twitter:before,
+.icon-vevo:before,
+.icon-viber:before,
+.icon-vip:before,
+.icon-wasabeat:before,
+.icon-website:before,
+.icon-wechat:before,
+.icon-whatsapp:before,
+.icon-wish:before,
+.icon-wix:before,
+.icon-work:before,
+.icon-yandex:before,
+.icon-youseemusik:before,
+.icon-youtube:before,
+.icon-youtubemusic:before,
+.icon-zingmp3:before,
+.icon-about:before,
+.icon-add:before,
+.icon-airbnb:before,
+.icon-aliexpress:before,
+.icon-amazonalex:before,
+.icon-amazonmusic:before,
+.icon-audiomack:before,
+.icon-band:before,
+.icon-bandcamp1:before,
+.icon-behance:before,
+.icon-blog:before,
+.icon-book:before,
+.icon-boomplaymusic:before,
+.icon-bukalapak:before,
+.icon-cameo:before,
+.icon-card:before,
+.icon-class:before,
+.icon-close:before,
+.icon-clubhouse:before,
+.icon-coffee:before,
+.icon-date:before,
+.icon-deezer:before,
+.icon-delete:before,
+.icon-discord:before,
+.icon-dribbble:before,
+.icon-dropbox:before,
+.icon-ebay:before,
+.icon-edit:before,
+.icon-email:before,
+.icon-email1:before,
+.icon-etsy:before,
+.icon-fa-close:before,
+.icon-facebook:before,
+.icon-fbmessenger:before,
+.icon-flipkart:before,
+.icon-googlepaly:before,
+.icon-googleplaymusic:before,
+.icon-gplus:before,
+.icon-hdtracks:before,
+.icon-home:before,
+.icon-iheartradio:before,
+.icon-instagram:before,
+.icon-itunes:before,
+.icon-lazada:before,
+.icon-line:before,
+.icon-lineat:before,
+.icon-linemusic:before,
+.icon-link:before,
+.icon-linkedin:before,
+.icon-map:before,
+.icon-mark:before,
+.icon-medium:before,
+.icon-menu:before,
+.icon-money:before,
+.icon-music:before,
+.icon-napster:before,
+.icon-naver:before,
+.icon-note:before,
+.icon-onlyfans:before,
+.icon-other2:before,
+.icon-other5:before,
+.icon-phone:before,
+.icon-product:before,
+.icon-selected:before,
+.icon-signal:before,
+.icon-snapchat:before,
+.icon-social-2-1:before,
+.icon-social-2-2:before,
+.icon-social-3-1:before,
+.icon-social-3-2:before,
+.icon-social-3-3:before,
+.icon-social-3-4:before,
+.icon-social-3-5:before,
+.icon-social-3-6:before,
+.icon-social-3-7:before,
+.icon-social-3-8:before,
+.icon-social-3-9:before,
+.icon-social-3-10:before,
+.icon-social-3-11:before,
+.icon-social-3-12:before,
+.icon-social-3-13:before,
+.icon-social-3-14:before,
+.icon-social-3-15:before,
+.icon-social-3-16:before,
+.icon-social-3-17:before,
+.icon-social-3-18:before,
+.icon-social-3-19:before,
+.icon-social-3-20:before,
+.icon-social-3-21:before,
+.icon-social-3-22:before,
+.icon-social-3-23:before,
+.icon-social-3-24:before,
+.icon-social-3-25:before,
+.icon-social-3-26:before,
+.icon-social-3-27:before,
+.icon-social-3-28:before,
+.icon-social-3-29:before,
+.icon-social-3-30:before,
+.icon-social-3-31:before,
+.icon-social-3-32:before,
+.icon-social-3-33:before,
+.icon-social-3-34:before,
+.icon-social-3-35:before,
+.icon-social-3-36:before,
+.icon-social-3-37:before,
+.icon-social-3-38:before,
+.icon-social-3-39:before,
+.icon-social-3-40:before,
+.icon-social-3-41:before,
+.icon-social-3-42:before,
+.icon-social-3-43:before,
+.icon-social-3-44:before,
+.icon-social-3-45:before,
+.icon-social-3-46:before,
+.icon-social-3-47:before,
+.icon-social-3-48:before,
+.icon-social-3-49:before,
+.icon-social-3-50:before,
+.icon-social-3-51:before,
+.icon-social-3-52:before,
+.icon-social-3-53:before,
+.icon-social-3-54:before,
+.icon-social-3-55:before,
+.icon-social-3-56:before,
+.icon-social-3-57:before,
+.icon-social-3-58:before,
+.icon-social-3-59:before,
+.icon-social-3-60:before,
+.icon-social-3-61:before,
+.icon-social-3-62:before,
+.icon-social-3-63:before,
+.icon-social-3-64:before,
+.icon-social-3-65:before,
+.icon-social-3-561:before,
+.icon-social-4-1:before,
+.icon-social-4-2:before,
+.icon-social-4-3:before,
+.icon-social-4-4:before,
+.icon-social-4-5:before,
+.icon-social-4-6:before,
+.icon-social-4-7:before,
+.icon-social-4-8:before,
+.icon-social-4-9:before,
+.icon-social-4-10:before,
+.icon-social-4-11:before,
+.icon-social-4-12:before,
+.icon-social-4-13:before,
+.icon-social-4-14:before,
+.icon-social-4-15:before,
+.icon-social-4-16:before,
+.icon-social-4-17:before,
+.icon-social-4-18:before,
+.icon-social-4-19:before,
+.icon-social-4-20:before,
+.icon-social-4-21:before,
+.icon-social-4-22:before,
+.icon-social-4-23:before,
+.icon-social-4-24:before,
+.icon-social-4-25:before,
+.icon-social-4-26:before,
+.icon-social-4-27:before,
+.icon-social-4-28:before,
+.icon-social-4-29:before,
+.icon-social-4-30:before,
+.icon-social-4-31:before,
+.icon-social-4-32:before,
+.icon-social-4-33:before,
+.icon-social-4-34:before,
+.icon-social-4-35:before,
+.icon-social-4-36:before,
+.icon-social-4-37:before,
+.icon-social-4-38:before,
+.icon-social-4-39:before,
+.icon-social-4-40:before,
+.icon-social-4-41:before,
+.icon-social-4-42:before,
+.icon-social-4-43:before,
+.icon-social-4-44:before,
+.icon-social-4-45:before,
+.icon-social-4-46:before,
+.icon-social-4-47:before,
+.icon-social-4-48:before,
+.icon-social-4-49:before,
+.icon-social-4-50:before,
+.icon-social-4-51:before,
+.icon-social-4-52:before,
+.icon-social-4-53:before,
+.icon-social-4-54:before,
+.icon-social-4-55:before,
+.icon-social-4-56:before,
+.icon-social-4-57:before,
+.icon-social-4-58:before,
+.icon-social-4-59:before,
+.icon-social-4-60:before,
+.icon-social-4-61:before,
+.icon-social-4-62:before,
+.icon-social-4-63:before,
+.icon-social-4-64:before,
+.icon-social-4-65:before,
+.icon-social-6-1:before,
+.icon-social-6-2:before,
+.icon-social-6-3:before,
+.icon-social-6-4:before,
+.icon-social-6-5:before,
+.icon-social-6-6:before,
+.icon-social-6-7:before,
+.icon-social-6-8:before,
+.icon-social-6-9:before,
+.icon-social-6-10:before,
+.icon-social-6-11:before,
+.icon-social-6-12:before,
+.icon-social-6-13:before,
+.icon-social-6-14:before,
+.icon-social-6-15:before,
+.icon-social-6-16:before,
+.icon-social-6-17:before,
+.icon-social-6-18:before,
+.icon-social-6-19:before,
+.icon-social-6-20:before,
+.icon-social-6-21:before,
+.icon-social-6-22:before,
+.icon-social-6-23:before,
+.icon-social-6-24:before,
+.icon-social-6-25:before,
+.icon-social-6-26:before,
+.icon-social-6-27:before,
+.icon-social-6-28:before,
+.icon-social-6-29:before,
+.icon-social-6-30:before,
+.icon-social-6-31:before,
+.icon-social-6-32:before,
+.icon-social-6-33:before,
+.icon-social-6-34:before,
+.icon-social-6-35:before,
+.icon-social-6-36:before,
+.icon-social-6-37:before,
+.icon-social-6-38:before,
+.icon-social-6-39:before,
+.icon-social-6-40:before,
+.icon-social-6-41:before,
+.icon-social-6-42:before,
+.icon-social-6-43:before,
+.icon-social-6-44:before,
+.icon-social-6-45:before,
+.icon-social-6-46:before,
+.icon-social-6-47:before,
+.icon-social-6-48:before,
+.icon-social-6-49:before,
+.icon-social-6-50:before,
+.icon-social-6-51:before,
+.icon-social-6-52:before,
+.icon-social-6-53:before,
+.icon-social-6-54:before,
+.icon-social-6-55:before,
+.icon-social-6-56:before,
+.icon-social-6-57:before,
+.icon-social-6-58:before,
+.icon-social-6-59:before,
+.icon-social-6-60:before,
+.icon-social-6-61:before,
+.icon-social-6-62:before,
+.icon-social-6-63:before,
+.icon-social-6-64:before,
+.icon-social-6-65:before,
+.icon-social-6-561:before,
+.icon-squarespace:before,
+.icon-substack:before,
+.icon-substack1:before,
+.icon-tab43:before,
+.icon-telegram:before,
+.icon-ticketmaster:before,
+.icon-tiktok:before,
+.icon-time:before,
+.icon-vibe:before,
+.icon-vimeo:before,
+.icon-vine:before,
+.icon-vinted:before,
+.icon-vk:before,
+.icon-zhankai:before,
+.icons8,
+[data-icons8]:before {
+    display: inline-block;
+    font-family: lfshare;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    line-height: 1;
+    text-decoration: inherit;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased
+}
+
+.icon-7digital:before {
+    content: "\f100"
+}
+
+.icon-8tracks:before {
+    content: "\f101"
+}
+
+.icon-amazon:before {
+    content: "\f102"
+}
+
+.icon-anghami:before {
+    content: "\f103"
+}
+
+.icon-applemusic:before {
+    content: "\f104"
+}
+
+.icon-awa:before {
+    content: "\f105"
+}
+
+.icon-bandcamp:before {
+    content: "\f106"
+}
+
+.icon-beatport:before {
+    content: "\f107"
+}
+
+.icon-bleep:before {
+    content: "\f108"
+}
+
+.icon-boomkat:before {
+    content: "\f109"
+}
+
+.icon-bugs:before {
+    content: "\f10a"
+}
+
+.icon-emusic:before {
+    content: "\f10b"
+}
+
+.icon-flo:before {
+    content: "\f10c"
+}
+
+.icon-gaana:before {
+    content: "\f10d"
+}
+
+.icon-genie:before {
+    content: "\f10e"
+}
+
+.icon-groove:before {
+    content: "\f10f"
+}
+
+.icon-hardwax:before {
+    content: "\f110"
+}
+
+.icon-jiosaavn:before {
+    content: "\f111"
+}
+
+.icon-joox:before {
+    content: "\f112"
+}
+
+.icon-juno:before {
+    content: "\f113"
+}
+
+.icon-kkbox:before {
+    content: "\f114"
+}
+
+.icon-melon:before {
+    content: "\f115"
+}
+
+.icon-mixcloud:before {
+    content: "\f116"
+}
+
+.icon-odnoklassniki:before {
+    content: "\f117"
+}
+
+.icon-offerup:before {
+    content: "\f118"
+}
+
+.icon-other0:before {
+    content: "\f119"
+}
+
+.icon-other1:before {
+    content: "\f11a"
+}
+
+.icon-other3:before {
+    content: "\f11b"
+}
+
+.icon-other4:before {
+    content: "\f11c"
+}
+
+.icon-other6:before {
+    content: "\f11d"
+}
+
+.icon-other7:before {
+    content: "\f11e"
+}
+
+.icon-other8:before {
+    content: "\f11f"
+}
+
+.icon-other9:before {
+    content: "\f120"
+}
+
+.icon-other10:before {
+    content: "\f121"
+}
+
+.icon-other11:before {
+    content: "\f122"
+}
+
+.icon-other12:before {
+    content: "\f123"
+}
+
+.icon-other13:before {
+    content: "\f124"
+}
+
+.icon-other14:before {
+    content: "\f125"
+}
+
+.icon-other15:before {
+    content: "\f126"
+}
+
+.icon-other16:before {
+    content: "\f127"
+}
+
+.icon-other17:before {
+    content: "\f128"
+}
+
+.icon-other18:before {
+    content: "\f129"
+}
+
+.icon-other19:before {
+    content: "\f12a"
+}
+
+.icon-other20:before {
+    content: "\f12b"
+}
+
+.icon-other21:before {
+    content: "\f12c"
+}
+
+.icon-other22:before {
+    content: "\f12d"
+}
+
+.icon-other23:before {
+    content: "\f12e"
+}
+
+.icon-other24:before {
+    content: "\f12f"
+}
+
+.icon-pandora:before {
+    content: "\f130"
+}
+
+.icon-patreon:before {
+    content: "\f131"
+}
+
+.icon-pinterest:before {
+    content: "\f132"
+}
+
+.icon-plans:before {
+    content: "\f133"
+}
+
+.icon-portfolio:before {
+    content: "\f134"
+}
+
+.icon-poshmark:before {
+    content: "\f135"
+}
+
+.icon-price:before {
+    content: "\f136"
+}
+
+.icon-qobuz:before {
+    content: "\f137"
+}
+
+.icon-qqmusic:before {
+    content: "\f138"
+}
+
+.icon-service:before {
+    content: "\f139"
+}
+
+.icon-shopee:before {
+    content: "\f13a"
+}
+
+.icon-shopify:before {
+    content: "\f13b"
+}
+
+.icon-simfyafrica:before {
+    content: "\f13c"
+}
+
+.icon-skype:before {
+    content: "\f13d"
+}
+
+.icon-smile:before {
+    content: "\f13e"
+}
+
+.icon-snapdeal:before {
+    content: "\f13f"
+}
+
+.icon-soundcloud:before {
+    content: "\f140"
+}
+
+.icon-spotify:before {
+    content: "\f141"
+}
+
+.icon-store:before {
+    content: "\f142"
+}
+
+.icon-story:before {
+    content: "\f143"
+}
+
+.icon-studio:before {
+    content: "\f144"
+}
+
+.icon-suamusica:before {
+    content: "\f145"
+}
+
+.icon-suamusicaoficial:before {
+    content: "\f146"
+}
+
+.icon-subs:before {
+    content: "\f147"
+}
+
+.icon-telephone:before {
+    content: "\f148"
+}
+
+.icon-tidal:before {
+    content: "\f149"
+}
+
+.icon-tokopedia:before {
+    content: "\f14a"
+}
+
+.icon-traing:before {
+    content: "\f14b"
+}
+
+.icon-traxsource:before {
+    content: "\f14c"
+}
+
+.icon-tumblr:before {
+    content: "\f14d"
+}
+
+.icon-twitch:before {
+    content: "\f14e"
+}
+
+.icon-twitter:before {
+    content: "\f14f"
+}
+
+.icon-vevo:before {
+    content: "\f150"
+}
+
+.icon-viber:before {
+    content: "\f151"
+}
+
+.icon-vip:before {
+    content: "\f152"
+}
+
+.icon-wasabeat:before {
+    content: "\f153"
+}
+
+.icon-website:before {
+    content: "\f154"
+}
+
+.icon-wechat:before {
+    content: "\f155"
+}
+
+.icon-whatsapp:before {
+    content: "\f156"
+}
+
+.icon-wish:before {
+    content: "\f157"
+}
+
+.icon-wix:before {
+    content: "\f158"
+}
+
+.icon-work:before {
+    content: "\f159"
+}
+
+.icon-yandex:before {
+    content: "\f15a"
+}
+
+.icon-youseemusik:before {
+    content: "\f15b"
+}
+
+.icon-youtube:before {
+    content: "\f15c"
+}
+
+.icon-youtubemusic:before {
+    content: "\f15d"
+}
+
+.icon-zingmp3:before {
+    content: "\f15e"
+}
+
+.icon-about:before {
+    content: "\f15f"
+}
+
+.icon-add:before {
+    content: "\f160"
+}
+
+.icon-airbnb:before {
+    content: "\f161"
+}
+
+.icon-aliexpress:before {
+    content: "\f162"
+}
+
+.icon-amazonalex:before {
+    content: "\f163"
+}
+
+.icon-amazonmusic:before {
+    content: "\f164"
+}
+
+.icon-audiomack:before {
+    content: "\f165"
+}
+
+.icon-band:before {
+    content: "\f166"
+}
+
+.icon-bandcamp1:before {
+    content: "\f167"
+}
+
+.icon-behance:before {
+    content: "\f168"
+}
+
+.icon-blog:before {
+    content: "\f169"
+}
+
+.icon-book:before {
+    content: "\f16a"
+}
+
+.icon-boomplaymusic:before {
+    content: "\f16b"
+}
+
+.icon-bukalapak:before {
+    content: "\f16c"
+}
+
+.icon-cameo:before {
+    content: "\f16d"
+}
+
+.icon-card:before {
+    content: "\f16e"
+}
+
+.icon-class:before {
+    content: "\f16f"
+}
+
+.icon-close:before {
+    content: "\f170"
+}
+
+.icon-clubhouse:before {
+    content: "\f171"
+}
+
+.icon-coffee:before {
+    content: "\f172"
+}
+
+.icon-date:before {
+    content: "\f173"
+}
+
+.icon-deezer:before {
+    content: "\f174"
+}
+
+.icon-delete:before {
+    content: "\f175"
+}
+
+.icon-discord:before {
+    content: "\f176"
+}
+
+.icon-dribbble:before {
+    content: "\f177"
+}
+
+.icon-dropbox:before {
+    content: "\f178"
+}
+
+.icon-ebay:before {
+    content: "\f179"
+}
+
+.icon-edit:before {
+    content: "\f17a"
+}
+
+.icon-email:before {
+    content: "\f17b"
+}
+
+.icon-email1:before {
+    content: "\f17c"
+}
+
+.icon-etsy:before {
+    content: "\f17d"
+}
+
+.icon-fa-close:before {
+    content: "\f17e"
+}
+
+.icon-facebook:before {
+    content: "\f17f"
+}
+
+.icon-fbmessenger:before {
+    content: "\f180"
+}
+
+.icon-flipkart:before {
+    content: "\f181"
+}
+
+.icon-googlepaly:before {
+    content: "\f182"
+}
+
+.icon-googleplaymusic:before {
+    content: "\f183"
+}
+
+.icon-gplus:before {
+    content: "\f184"
+}
+
+.icon-hdtracks:before {
+    content: "\f185"
+}
+
+.icon-home:before {
+    content: "\f186"
+}
+
+.icon-iheartradio:before {
+    content: "\f187"
+}
+
+.icon-instagram:before {
+    content: "\f188"
+}
+
+.icon-itunes:before {
+    content: "\f189"
+}
+
+.icon-lazada:before {
+    content: "\f18a"
+}
+
+.icon-line:before {
+    content: "\f18b"
+}
+
+.icon-lineat:before {
+    content: "\f18c"
+}
+
+.icon-linemusic:before {
+    content: "\f18d"
+}
+
+.icon-link:before {
+    content: "\f18e"
+}
+
+.icon-linkedin:before {
+    content: "\f18f"
+}
+
+.icon-map:before {
+    content: "\f190"
+}
+
+.icon-mark:before {
+    content: "\f191"
+}
+
+.icon-medium:before {
+    content: "\f192"
+}
+
+.icon-menu:before {
+    content: "\f193"
+}
+
+.icon-money:before {
+    content: "\f194"
+}
+
+.icon-music:before {
+    content: "\f195"
+}
+
+.icon-napster:before {
+    content: "\f196"
+}
+
+.icon-naver:before {
+    content: "\f197"
+}
+
+.icon-note:before {
+    content: "\f198"
+}
+
+.icon-onlyfans:before {
+    content: "\f199"
+}
+
+.icon-other2:before {
+    content: "\f19a"
+}
+
+.icon-other5:before {
+    content: "\f19b"
+}
+
+.icon-phone:before {
+    content: "\f19c"
+}
+
+.icon-product:before {
+    content: "\f19d"
+}
+
+.icon-selected:before {
+    content: "\f19e"
+}
+
+.icon-signal:before {
+    content: "\f19f"
+}
+
+.icon-snapchat:before {
+    content: "\f1a0"
+}
+
+.icon-social-2-1:before {
+    content: "\f1a1"
+}
+
+.icon-social-2-2:before {
+    content: "\f1a2"
+}
+
+.icon-social-3-1:before {
+    content: "\f1a3"
+}
+
+.icon-social-3-2:before {
+    content: "\f1a4"
+}
+
+.icon-social-3-3:before {
+    content: "\f1a5"
+}
+
+.icon-social-3-4:before {
+    content: "\f1a6"
+}
+
+.icon-social-3-5:before {
+    content: "\f1a7"
+}
+
+.icon-social-3-6:before {
+    content: "\f1a8"
+}
+
+.icon-social-3-7:before {
+    content: "\f1a9"
+}
+
+.icon-social-3-8:before {
+    content: "\f1aa"
+}
+
+.icon-social-3-9:before {
+    content: "\f1ab"
+}
+
+.icon-social-3-10:before {
+    content: "\f1ac"
+}
+
+.icon-social-3-11:before {
+    content: "\f1ad"
+}
+
+.icon-social-3-12:before {
+    content: "\f1ae"
+}
+
+.icon-social-3-13:before {
+    content: "\f1af"
+}
+
+.icon-social-3-14:before {
+    content: "\f1b0"
+}
+
+.icon-social-3-15:before {
+    content: "\f1b1"
+}
+
+.icon-social-3-16:before {
+    content: "\f1b2"
+}
+
+.icon-social-3-17:before {
+    content: "\f1b3"
+}
+
+.icon-social-3-18:before {
+    content: "\f1b4"
+}
+
+.icon-social-3-19:before {
+    content: "\f1b5"
+}
+
+.icon-social-3-20:before {
+    content: "\f1b6"
+}
+
+.icon-social-3-21:before {
+    content: "\f1b7"
+}
+
+.icon-social-3-22:before {
+    content: "\f1b8"
+}
+
+.icon-social-3-23:before {
+    content: "\f1b9"
+}
+
+.icon-social-3-24:before {
+    content: "\f1ba"
+}
+
+.icon-social-3-25:before {
+    content: "\f1bb"
+}
+
+.icon-social-3-26:before {
+    content: "\f1bc"
+}
+
+.icon-social-3-27:before {
+    content: "\f1bd"
+}
+
+.icon-social-3-28:before {
+    content: "\f1be"
+}
+
+.icon-social-3-29:before {
+    content: "\f1bf"
+}
+
+.icon-social-3-30:before {
+    content: "\f1c0"
+}
+
+.icon-social-3-31:before {
+    content: "\f1c1"
+}
+
+.icon-social-3-32:before {
+    content: "\f1c2"
+}
+
+.icon-social-3-33:before {
+    content: "\f1c3"
+}
+
+.icon-social-3-34:before {
+    content: "\f1c4"
+}
+
+.icon-social-3-35:before {
+    content: "\f1c5"
+}
+
+.icon-social-3-36:before {
+    content: "\f1c6"
+}
+
+.icon-social-3-37:before {
+    content: "\f1c7"
+}
+
+.icon-social-3-38:before {
+    content: "\f1c8"
+}
+
+.icon-social-3-39:before {
+    content: "\f1c9"
+}
+
+.icon-social-3-40:before {
+    content: "\f1ca"
+}
+
+.icon-social-3-41:before {
+    content: "\f1cb"
+}
+
+.icon-social-3-42:before {
+    content: "\f1cc"
+}
+
+.icon-social-3-43:before {
+    content: "\f1cd"
+}
+
+.icon-social-3-44:before {
+    content: "\f1ce"
+}
+
+.icon-social-3-45:before {
+    content: "\f1cf"
+}
+
+.icon-social-3-46:before {
+    content: "\f1d0"
+}
+
+.icon-social-3-47:before {
+    content: "\f1d1"
+}
+
+.icon-social-3-48:before {
+    content: "\f1d2"
+}
+
+.icon-social-3-49:before {
+    content: "\f1d3"
+}
+
+.icon-social-3-50:before {
+    content: "\f1d4"
+}
+
+.icon-social-3-51:before {
+    content: "\f1d5"
+}
+
+.icon-social-3-52:before {
+    content: "\f1d6"
+}
+
+.icon-social-3-53:before {
+    content: "\f1d7"
+}
+
+.icon-social-3-54:before {
+    content: "\f1d8"
+}
+
+.icon-social-3-55:before {
+    content: "\f1d9"
+}
+
+.icon-social-3-56:before {
+    content: "\f1da"
+}
+
+.icon-social-3-57:before {
+    content: "\f1db"
+}
+
+.icon-social-3-58:before {
+    content: "\f1dc"
+}
+
+.icon-social-3-59:before {
+    content: "\f1dd"
+}
+
+.icon-social-3-60:before {
+    content: "\f1de"
+}
+
+.icon-social-3-61:before {
+    content: "\f1df"
+}
+
+.icon-social-3-62:before {
+    content: "\f1e0"
+}
+
+.icon-social-3-63:before {
+    content: "\f1e1"
+}
+
+.icon-social-3-64:before {
+    content: "\f1e2"
+}
+
+.icon-social-3-65:before {
+    content: "\f1e3"
+}
+
+.icon-social-3-561:before {
+    content: "\f1e4"
+}
+
+.icon-social-4-1:before {
+    content: "\f1e5"
+}
+
+.icon-social-4-2:before {
+    content: "\f1e6"
+}
+
+.icon-social-4-3:before {
+    content: "\f1e7"
+}
+
+.icon-social-4-4:before {
+    content: "\f1e8"
+}
+
+.icon-social-4-5:before {
+    content: "\f1e9"
+}
+
+.icon-social-4-6:before {
+    content: "\f1ea"
+}
+
+.icon-social-4-7:before {
+    content: "\f1eb"
+}
+
+.icon-social-4-8:before {
+    content: "\f1ec"
+}
+
+.icon-social-4-9:before {
+    content: "\f1ed"
+}
+
+.icon-social-4-10:before {
+    content: "\f1ee"
+}
+
+.icon-social-4-11:before {
+    content: "\f1ef"
+}
+
+.icon-social-4-12:before {
+    content: "\f1f0"
+}
+
+.icon-social-4-13:before {
+    content: "\f1f1"
+}
+
+.icon-social-4-14:before {
+    content: "\f1f2"
+}
+
+.icon-social-4-15:before {
+    content: "\f1f3"
+}
+
+.icon-social-4-16:before {
+    content: "\f1f4"
+}
+
+.icon-social-4-17:before {
+    content: "\f1f5"
+}
+
+.icon-social-4-18:before {
+    content: "\f1f6"
+}
+
+.icon-social-4-19:before {
+    content: "\f1f7"
+}
+
+.icon-social-4-20:before {
+    content: "\f1f8"
+}
+
+.icon-social-4-21:before {
+    content: "\f1f9"
+}
+
+.icon-social-4-22:before {
+    content: "\f1fa"
+}
+
+.icon-social-4-23:before {
+    content: "\f1fb"
+}
+
+.icon-social-4-24:before {
+    content: "\f1fc"
+}
+
+.icon-social-4-25:before {
+    content: "\f1fd"
+}
+
+.icon-social-4-26:before {
+    content: "\f1fe"
+}
+
+.icon-social-4-27:before {
+    content: "\f1ff"
+}
+
+.icon-social-4-28:before {
+    content: "\f200"
+}
+
+.icon-social-4-29:before {
+    content: "\f201"
+}
+
+.icon-social-4-30:before {
+    content: "\f202"
+}
+
+.icon-social-4-31:before {
+    content: "\f203"
+}
+
+.icon-social-4-32:before {
+    content: "\f204"
+}
+
+.icon-social-4-33:before {
+    content: "\f205"
+}
+
+.icon-social-4-34:before {
+    content: "\f206"
+}
+
+.icon-social-4-35:before {
+    content: "\f207"
+}
+
+.icon-social-4-36:before {
+    content: "\f208"
+}
+
+.icon-social-4-37:before {
+    content: "\f209"
+}
+
+.icon-social-4-38:before {
+    content: "\f20a"
+}
+
+.icon-social-4-39:before {
+    content: "\f20b"
+}
+
+.icon-social-4-40:before {
+    content: "\f20c"
+}
+
+.icon-social-4-41:before {
+    content: "\f20d"
+}
+
+.icon-social-4-42:before {
+    content: "\f20e"
+}
+
+.icon-social-4-43:before {
+    content: "\f20f"
+}
+
+.icon-social-4-44:before {
+    content: "\f210"
+}
+
+.icon-social-4-45:before {
+    content: "\f211"
+}
+
+.icon-social-4-46:before {
+    content: "\f212"
+}
+
+.icon-social-4-47:before {
+    content: "\f213"
+}
+
+.icon-social-4-48:before {
+    content: "\f214"
+}
+
+.icon-social-4-49:before {
+    content: "\f215"
+}
+
+.icon-social-4-50:before {
+    content: "\f216"
+}
+
+.icon-social-4-51:before {
+    content: "\f217"
+}
+
+.icon-social-4-52:before {
+    content: "\f218"
+}
+
+.icon-social-4-53:before {
+    content: "\f219"
+}
+
+.icon-social-4-54:before {
+    content: "\f21a"
+}
+
+.icon-social-4-55:before {
+    content: "\f21b"
+}
+
+.icon-social-4-56:before {
+    content: "\f21c"
+}
+
+.icon-social-4-57:before {
+    content: "\f21d"
+}
+
+.icon-social-4-58:before {
+    content: "\f21e"
+}
+
+.icon-social-4-59:before {
+    content: "\f21f"
+}
+
+.icon-social-4-60:before {
+    content: "\f220"
+}
+
+.icon-social-4-61:before {
+    content: "\f221"
+}
+
+.icon-social-4-62:before {
+    content: "\f222"
+}
+
+.icon-social-4-63:before {
+    content: "\f223"
+}
+
+.icon-social-4-64:before {
+    content: "\f224"
+}
+
+.icon-social-4-65:before {
+    content: "\f225"
+}
+
+.icon-social-6-1:before {
+    content: "\f226"
+}
+
+.icon-social-6-2:before {
+    content: "\f227"
+}
+
+.icon-social-6-3:before {
+    content: "\f228"
+}
+
+.icon-social-6-4:before {
+    content: "\f229"
+}
+
+.icon-social-6-5:before {
+    content: "\f22a"
+}
+
+.icon-social-6-6:before {
+    content: "\f22b"
+}
+
+.icon-social-6-7:before {
+    content: "\f22c"
+}
+
+.icon-social-6-8:before {
+    content: "\f22d"
+}
+
+.icon-social-6-9:before {
+    content: "\f22e"
+}
+
+.icon-social-6-10:before {
+    content: "\f22f"
+}
+
+.icon-social-6-11:before {
+    content: "\f230"
+}
+
+.icon-social-6-12:before {
+    content: "\f231"
+}
+
+.icon-social-6-13:before {
+    content: "\f232"
+}
+
+.icon-social-6-14:before {
+    content: "\f233"
+}
+
+.icon-social-6-15:before {
+    content: "\f234"
+}
+
+.icon-social-6-16:before {
+    content: "\f235"
+}
+
+.icon-social-6-17:before {
+    content: "\f236"
+}
+
+.icon-social-6-18:before {
+    content: "\f237"
+}
+
+.icon-social-6-19:before {
+    content: "\f238"
+}
+
+.icon-social-6-20:before {
+    content: "\f239"
+}
+
+.icon-social-6-21:before {
+    content: "\f23a"
+}
+
+.icon-social-6-22:before {
+    content: "\f23b"
+}
+
+.icon-social-6-23:before {
+    content: "\f23c"
+}
+
+.icon-social-6-24:before {
+    content: "\f23d"
+}
+
+.icon-social-6-25:before {
+    content: "\f23e"
+}
+
+.icon-social-6-26:before {
+    content: "\f23f"
+}
+
+.icon-social-6-27:before {
+    content: "\f240"
+}
+
+.icon-social-6-28:before {
+    content: "\f241"
+}
+
+.icon-social-6-29:before {
+    content: "\f242"
+}
+
+.icon-social-6-30:before {
+    content: "\f243"
+}
+
+.icon-social-6-31:before {
+    content: "\f244"
+}
+
+.icon-social-6-32:before {
+    content: "\f245"
+}
+
+.icon-social-6-33:before {
+    content: "\f246"
+}
+
+.icon-social-6-34:before {
+    content: "\f247"
+}
+
+.icon-social-6-35:before {
+    content: "\f248"
+}
+
+.icon-social-6-36:before {
+    content: "\f249"
+}
+
+.icon-social-6-37:before {
+    content: "\f24a"
+}
+
+.icon-social-6-38:before {
+    content: "\f24b"
+}
+
+.icon-social-6-39:before {
+    content: "\f24c"
+}
+
+.icon-social-6-40:before {
+    content: "\f24d"
+}
+
+.icon-social-6-41:before {
+    content: "\f24e"
+}
+
+.icon-social-6-42:before {
+    content: "\f24f"
+}
+
+.icon-social-6-43:before {
+    content: "\f250"
+}
+
+.icon-social-6-44:before {
+    content: "\f251"
+}
+
+.icon-social-6-45:before {
+    content: "\f252"
+}
+
+.icon-social-6-46:before {
+    content: "\f253"
+}
+
+.icon-social-6-47:before {
+    content: "\f254"
+}
+
+.icon-social-6-48:before {
+    content: "\f255"
+}
+
+.icon-social-6-49:before {
+    content: "\f256"
+}
+
+.icon-social-6-50:before {
+    content: "\f257"
+}
+
+.icon-social-6-51:before {
+    content: "\f258"
+}
+
+.icon-social-6-52:before {
+    content: "\f259"
+}
+
+.icon-social-6-53:before {
+    content: "\f25a"
+}
+
+.icon-social-6-54:before {
+    content: "\f25b"
+}
+
+.icon-social-6-55:before {
+    content: "\f25c"
+}
+
+.icon-social-6-56:before {
+    content: "\f25d"
+}
+
+.icon-social-6-57:before {
+    content: "\f25e"
+}
+
+.icon-social-6-58:before {
+    content: "\f25f"
+}
+
+.icon-social-6-59:before {
+    content: "\f260"
+}
+
+.icon-social-6-60:before {
+    content: "\f261"
+}
+
+.icon-social-6-61:before {
+    content: "\f262"
+}
+
+.icon-social-6-62:before {
+    content: "\f263"
+}
+
+.icon-social-6-63:before {
+    content: "\f264"
+}
+
+.icon-social-6-64:before {
+    content: "\f265"
+}
+
+.icon-social-6-65:before {
+    content: "\f266"
+}
+
+.icon-social-6-561:before {
+    content: "\f267"
+}
+
+.icon-squarespace:before {
+    content: "\f268"
+}
+
+.icon-substack:before {
+    content: "\f269"
+}
+
+.icon-substack1:before {
+    content: "\f26a"
+}
+
+.icon-tab43:before {
+    content: "\f26b"
+}
+
+.icon-telegram:before {
+    content: "\f26c"
+}
+
+.icon-ticketmaster:before {
+    content: "\f26d"
+}
+
+.icon-tiktok:before {
+    content: "\f26e"
+}
+
+.icon-time:before {
+    content: "\f26f"
+}
+
+.icon-vibe:before {
+    content: "\f270"
+}
+
+.icon-vimeo:before {
+    content: "\f271"
+}
+
+.icon-vine:before {
+    content: "\f272"
+}
+
+.icon-vinted:before {
+    content: "\f273"
+}
+
+.icon-vk:before {
+    content: "\f274"
+}
+
+.icon-zhankai:before {
+    content: "\f275"
+}
